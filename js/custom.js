@@ -8,11 +8,25 @@ $(function () {
   /* Preloader
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
-	$(window).on('load', function() {
-		setTimeout(function() {
-			$('.loader_bg').fadeToggle();
-		}, 2000);
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+  function hideLoader() {
+    $(".loader_bg").addClass("loaded").fadeOut(200);
+  }
+
+  $(window).on("load", function () {
+    hideLoader();
+  });
+
+  // Fallback: hide loader after 1 second maximum
+  setTimeout(function () {
+    hideLoader();
+  }, 1000);
+
+  // Also hide on DOMContentLoaded for faster response
+  $(document).ready(function () {
+    setTimeout(function () {
+      hideLoader();
+    }, 500);
+  });
 
   $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
