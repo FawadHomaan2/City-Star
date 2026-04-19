@@ -8,11 +8,10 @@ $(function () {
   /* Preloader
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
-  $(window).on("load", function () {
-    $(".loader_bg").fadeToggle();
-  });
-
-  /* Tooltip
+	$(window).on('load', function() {
+		setTimeout(function() {
+			$('.loader_bg').fadeToggle();
+		}, 2000);
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
   $(document).ready(function () {
