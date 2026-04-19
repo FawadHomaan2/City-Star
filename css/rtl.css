@@ -1,0 +1,130 @@
+/* RTL Support for Dari Language */
+
+/* Base RTL Direction */
+body[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Text Alignment */
+body[dir="rtl"] .text-left {
+    text-align: right !important;
+}
+
+body[dir="rtl"] .text-right {
+    text-align: left !important;
+}
+
+/* Margin and Padding Fixes */
+body[dir="rtl"] .ml-auto {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+body[dir="rtl"] .mr-auto {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+
+body[dir="rtl"] .pl-0,
+body[dir="rtl"] .px-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Navigation */
+body[dir="rtl"] .navbar-nav {
+    padding-right: 0;
+}
+
+body[dir="rtl"] .navbar-nav .nav-link {
+    text-align: right;
+}
+
+body[dir="rtl"] .dropdown-menu {
+    right: 0;
+    left: auto;
+    text-align: right;
+}
+
+/* Forms */
+body[dir="rtl"] .form-control {
+    text-align: right;
+}
+
+body[dir="rtl"] input[type="text"],
+body[dir="rtl"] input[type="email"],
+body[dir="rtl"] input[type="tel"],
+body[dir="rtl"] textarea {
+    text-align: right;
+}
+
+/* Footer Links */
+body[dir="rtl"] .footer ul {
+    text-align: right;
+}
+
+body[dir="rtl"] .footer li {
+    text-align: right;
+}
+
+/* Gallery Items */
+body[dir="rtl"] .gallery_img {
+    text-align: center;
+}
+
+/* Testimonials */
+body[dir="rtl"] .testimonial_item {
+    text-align: center;
+}
+
+body[dir="rtl"] .testimonial_item p {
+    text-align: center;
+}
+
+/* Blog Items */
+body[dir="rtl"] .blog_box {
+    text-align: center;
+}
+
+/* Room/Venue Items */
+body[dir="rtl"] .room {
+    text-align: center;
+}
+
+/* Service Boxes */
+body[dir="rtl"] .service_box {
+    text-align: center;
+}
+
+/* Contact Form */
+body[dir="rtl"] .main_form {
+    text-align: right;
+}
+
+/* Newsletter Form */
+body[dir="rtl"] .bottom_form {
+    text-align: center;
+}
+
+/* Social Icons */
+body[dir="rtl"] .social_icon {
+    text-align: center;
+}
+
+body[dir="rtl"] .social_icon li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body[dir="rtl"] .navbar-nav {
+        text-align: right;
+    }
+    
+    body[dir="rtl"] .footer .col-md-4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
